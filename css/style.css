@@ -148,6 +148,20 @@ body {
     color: #495057;
 }
 
+/* --- Abstracts --- */
+.abstract {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-left: 3px solid var(--primary-color);
+    font-size: 0.95rem;
+}
+
+.abstract.show {
+    display: block;
+}
+
 /* --- Experience & Education Items --- */
 .experience-item, .education-item {
     margin-bottom: 1.5rem;

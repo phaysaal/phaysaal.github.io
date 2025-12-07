@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleButtons.forEach(button => {
         button.addEventListener('click', function() {
             const abstractDiv = this.nextElementSibling;
-            if (abstractDiv.style.display === 'block') {
-                abstractDiv.style.display = 'none';
-                this.textContent = 'Show Abstract';
-            } else {
-                abstractDiv.style.display = 'block';
+            abstractDiv.classList.toggle('show');
+
+            if (abstractDiv.classList.contains('show')) {
                 this.textContent = 'Hide Abstract';
+            } else {
+                this.textContent = 'Show Abstract';
             }
         });
     });
